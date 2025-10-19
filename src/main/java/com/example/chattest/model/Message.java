@@ -1,0 +1,21 @@
+package com.example.chattest.model;
+
+public class Message {
+    private final String username;
+    private final String content;
+    private final boolean isSentByMe;
+    private final boolean isSystemMessage;
+
+    public Message(String username, String content, boolean isSentByMe, boolean isSystemMessage) {
+        this.username = username;
+        this.content = content;
+        this.isSentByMe = isSentByMe;
+        this.isSystemMessage = isSystemMessage;
+    }
+
+    // Getters
+    public String getUsername() { return username; }
+    public String getContent() { return content; }
+    public boolean isSentByMe() { return isSentByMe; }
+    public boolean isSystemMessage() { return isSystemMessage; }
+}

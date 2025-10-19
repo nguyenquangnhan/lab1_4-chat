@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SelectionMode?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: #f0f5f5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chattest.controller.CreateGroupController">
+    <children>
+        <Label text="Tạo nhóm mới" textFill="#0084ff">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="groupNameField" promptText="Nhập tên nhóm..." />
+
+        <Label text="Chọn thành viên (giữ Ctrl để chọn nhiều)" />
+
+        <ListView fx:id="userListView" prefHeight="200.0" prefWidth="200.0">
+
+        </ListView>
+
+        <Button fx:id="createButton" mnemonicParsing="false" onAction="#onFinalCreateClick" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #42b72a; -fx-background-radius: 15;" text="Tạo và Mời" textFill="WHITE" />
+        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#onCancelClick" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: #90949c; -fx-background-radius: 15;" text="Hủy" textFill="WHITE" />
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+    </padding>
+</VBox>

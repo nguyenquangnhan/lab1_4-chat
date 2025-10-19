@@ -1,0 +1,60 @@
+/* CSS cho bong bóng chat */
+.message-bubble {
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 18px;
+    -fx-max-width: 250px;
+    -fx-font-size: 14px; /* Bong bóng không chiếm toàn bộ chiều rộng */
+    -fx-wrap-text: true; /* Tự động xuống dòng */
+
+}
+
+/* Bong bóng GỬI (màu xanh, căn phải) */
+.sent {
+    -fx-background-color: #0084ff;
+    -fx-text-fill: white;
+}
+
+/* Bong bóng NHẬN (màu xám, căn trái) */
+.received {
+    -fx-background-color: #e4e6eb;
+    -fx-text-fill: black;
+}
+
+/* Container cho bong bóng để căn chỉnh */
+.message-container {
+    -fx-padding: 2px 0;
+}
+
+/* Style cho tên người gửi (phía trên bong bóng chat nhận) */
+.sender-label {
+    -fx-font-size: 10px;
+    -fx-text-fill: #555555; /* Màu xám tối */
+    -fx-padding: 0 0 0 10px; /* Căn lề trái một chút */
+}
+
+
+/* Tùy chỉnh thanh cuộn */
+.scroll-pane > .viewport {
+    -fx-background-color: #ffffff;
+}
+
+/* Tùy chỉnh ListView */
+.list-view {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list-cell {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:focused {
+    -fx-background-color: #d8eafc; /* Màu xanh nhạt khi chọn */
+    -fx-text-fill: #0084ff;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #e8eafc; /* Màu khi di chuột qua */
+}
