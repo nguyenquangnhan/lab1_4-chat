@@ -9,7 +9,7 @@ import java.util.Set;
 public class DatabaseManager {
 
     // --- CẤU HÌNH DATABASE ---
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/chat_test";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/chat_test?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String DB_USER = "root";
     private static final String DB_PASS = "1234"; // Thay mật khẩu của bạn
     // ---------------------------
